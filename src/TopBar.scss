@@ -1,0 +1,15 @@
+.TopBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.125rem;
+  color: white;
+  background-color: $secondary-color;
+
+  h1 {
+    margin: 0;
+    font-size: .75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,18 @@
+@import "node_modules/normalize-scss/sass/_normalize";
+@include normalize();
+@import 'variables.scss';
+@import 'Loader.scss';
+@import 'TopBar.scss';
+@import 'Grid.scss';
+@import 'Card.scss';
+@import 'FetchButton.scss';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size:62.5%;
+  font-family: Helvetica, sans-serif;
+  background: $primary-color;
+}
