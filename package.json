@@ -9,8 +9,8 @@
   },
   "license": "UNLICENSED",
   "devDependencies": {
-    "isomorphic-fetch": "^2.2.1",
     "css-loader": "^0.26.2",
+    "isomorphic-fetch": "^2.2.1",
     "neutrino": "^5.9.0",
     "neutrino-preset-react": "^5.9.0",
     "node-sass": "^4.5.0",
@@ -18,28 +18,35 @@
     "sass-loader": "^6.0.2",
     "style-loader": "^0.13.2"
   },
-    "neutrino": {
-      "use": [
-        "neutrino-preset-react",
-        "override.js"
-      ],
-      "options": {
-        "html": {
-          "appMountId": "root"
-        }
-      },
-      "config": {
-        "entry": {
-          "vendor": [
-            "react",
-            "react-dom"
-          ]
-        }
+  "neutrino": {
+    "use": [
+      "neutrino-preset-react",
+      "override.js"
+    ],
+    "options": {
+      "html": {
+        "appMountId": "root"
       }
     },
-    "dependencies": {
-      "react-hot-loader": "^3.0.0-beta.7",
-      "react": "^15.5.4",
-      "react-dom": "^15.5.4"
+    "config": {
+      "entry": {
+        "vendor": [
+          "react",
+          "react-dom"
+        ]
+      }
     }
+  },
+  "dependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-hot-loader": "^3.0.0-beta.7"
   }
+}
