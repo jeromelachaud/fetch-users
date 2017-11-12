@@ -30,12 +30,16 @@ export default class App extends Component {
 
   componentWillUpdate(nextProps, nextState) {
     if (this.state.page !== nextState.page) {
-      this.fetchData({ page: this.state.page })
+      this.fetchData({
+        page: this.state.page,
+      })
     }
   }
 
   componentWillMount() {
-    this.fetchData({ page: this.state.page })
+    this.fetchData({
+      page: this.state.page,
+    })
   }
 
   handleClick() {
